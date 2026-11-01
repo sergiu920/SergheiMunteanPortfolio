@@ -27,7 +27,7 @@ export default function About() {
               <span className="about-focus-number">01</span>
               <div>
                 <h3>Backend Development</h3>
-                <p>Developing backend functionality, REST APIs, database operations, and third-party integrations using PHP and Laravel.</p>
+                <p>Developing backend functionality, REST APIs, database operations, and third-party integrations using PHP, Laravel, and Node.js.</p>
               </div>
             </li>
             <li className="about-focus-item">
