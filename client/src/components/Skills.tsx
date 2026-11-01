@@ -1,19 +1,57 @@
 export default function Skills() {
   const skillGroups = [
     {
-      number: "01",
-      title: "Languages & frameworks",
-      skills: ["PHP", "Laravel", "JavaScript"],
+      title: "Backend Development",
+      skills: ["PHP", "Laravel", "SQL", "MySQL"],
     },
     {
-      number: "02",
-      title: "Application development",
-      skills: ["Full-stack development", "Web applications", "APIs"],
+      title: "APIs & Integrations",
+      skills: ["REST APIs", "SOAP", "Third-party Integrations"],
     },
     {
-      number: "03",
-      title: "Commerce",
-      skills: ["E-commerce solutions", "Online storefronts"],
+      title: "Frontend Development",
+      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React"],
+    },
+    // Later:
+    // {
+    //   title: "Testing & Quality",
+    //   skills: ["PHPUnit"],
+    // },
+    {
+      title: "Node.js Ecosystem - Beginner",
+      skills: ["Node.js", "Express.js", "PostgreSQL"],
+    },
+    // Later:
+    // {
+    //   title: ".NET Ecosystem",
+    //   skills: ["C#", ".NET"],
+    // },
+    {
+      title: "E-commerce & CMS",
+      skills: ["Shopify", "WordPress", "CS-Cart"],
+    },
+    // Later:
+    // {
+    //   title: "Payment Integration",
+    //   skills: ["Stripe"],
+    // },
+    {
+      title: "Architecture & Concepts",
+      skills: ["OOP", "MVC"],
+    },
+    {
+      title: "Tools",
+      //Later: "CI/CD", Kubernetes, Redis
+      skills: ["Git", "Docker"],
+    },
+    {
+      title: "AI-Assisted Development",
+      // Later: Claude Code
+      skills: ["GitHub Copilot"],
+    },
+    {
+      title: "Currently Learning",
+      skills: ["Python", "Data Structures & Algorithms"],
     },
   ];
 
@@ -24,19 +62,18 @@ export default function Skills() {
           <div>
             <p className="skills-eyebrow">Capabilities</p>
             <h2 className="mt-3 text-3xl font-bold text-gray-950 md:text-4xl">
-              Skills &amp; technologies
+              Technical Skills & Technologies
             </h2>
           </div>
           <p className="skills-intro">
-            The tools and areas of work I bring together to build complete web experiences.
+            Technologies and technical skills I use to develop web applications, backend systems, and modern user interfaces.
           </p>
         </div>
 
         <div className="skills-groups">
-          {skillGroups.map((group) => (
-            <section className="skill-group" key={group.number} aria-labelledby={`skill-group-${group.number}`}>
-              <span className="skill-group-number">{group.number}</span>
-              <h3 id={`skill-group-${group.number}`}>{group.title}</h3>
+          {skillGroups.map((group, index) => (
+            <section className="skill-group" key={group.title} aria-labelledby={`skill-group-${index}`}>
+              <h3 id={`skill-group-${index}`}>{group.title}</h3>
               <ul className="skill-list">
                 {group.skills.map((skill) => (
                   <li key={skill}>{skill}</li>
