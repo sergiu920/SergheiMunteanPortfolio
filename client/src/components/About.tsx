@@ -8,9 +8,15 @@ export default function About() {
             I build useful things for the web.
           </h2>
           <p className="about-intro">
-            I&apos;m a full-stack developer focused on web applications, APIs, and e-commerce
-            solutions. I work across the interface and the systems behind it, using PHP,
-            Laravel, JavaScript, and modern web technologies.
+            I enjoy turning ideas and business requirements into practical software. My work involves understanding how different parts of an application fit together, identifying problems, and developing solutions that are reliable and easy to maintain.
+          </p>
+          
+          <p className="about-intro">
+            Throughout my career, I've worked on projects ranging from business management systems and e-commerce platforms to API integrations and custom web applications.
+          </p>
+
+          <p className="about-intro">
+            I value clean architecture, maintainable code, and continuous learning. I believe good software isn't just about making things work — it's about building solutions that make people's work easier.
           </p>
         </div>
 
@@ -20,22 +26,22 @@ export default function About() {
             <li className="about-focus-item">
               <span className="about-focus-number">01</span>
               <div>
-                <h3>Backend &amp; APIs</h3>
-                <p>PHP, Laravel, and reliable services built around real workflows.</p>
+                <h3>Backend Development</h3>
+                <p>Developing backend functionality, REST APIs, database operations, and third-party integrations using PHP and Laravel.</p>
               </div>
             </li>
             <li className="about-focus-item">
               <span className="about-focus-number">02</span>
               <div>
-                <h3>Frontend development</h3>
-                <p>Responsive interfaces with JavaScript and modern web tools.</p>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive, user-friendly interfaces with JavaScript, React, and modern web technologies.</p>
               </div>
             </li>
             <li className="about-focus-item">
               <span className="about-focus-number">03</span>
               <div>
-                <h3>E-commerce</h3>
-                <p>Storefronts and connected shopping experiences from browse to checkout.</p>
+                <h3>E-commerce Solutions</h3>
+                <p>Developing and maintaining e-commerce platforms, custom features, and integrations that support online businesses.</p>
               </div>
             </li>
           </ul>
