@@ -154,6 +154,23 @@ html {
     margin-top: 18px;
 }
 
+.project-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card-shell {
+    position: relative;
+    min-width: 0;
+}
+
+.project-card-link:focus-visible {
+    border-radius: 6px;
+    outline: 3px solid #4f46e5;
+    outline-offset: 3px;
+}
+
 .project-card {
     min-width: 0;
     overflow: hidden;
@@ -163,7 +180,8 @@ html {
     transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.project-card:hover {
+.project-card-link:hover .project-card,
+.project-card-link:focus-visible .project-card {
     transform: translateY(-3px);
     border-color: #9ca3af;
 }
@@ -182,7 +200,8 @@ html {
 }
 
 .project-card-content {
-    padding: 18px;
+    position: relative;
+    padding: 18px 18px 58px;
 }
 
 .about-section {
@@ -764,9 +783,54 @@ html {
     gap: 7px 12px;
     margin-top: 16px;
     border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
     padding-top: 13px;
+    padding-bottom: 13px;
     color: #374151;
     font-size: 11px;
+}
+
+.project-card-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.project-website-link {
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    bottom: 18px;
+    align-items: center;
+    gap: 6px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.project-card-link:hover + .project-website-link {
+    transform: translateY(-3px);
+}
+
+.project-website-link:hover,
+.project-website-link:focus-visible {
+    color: #4338ca;
+    text-decoration: underline;
+}
+
+.project-website-link:focus-visible {
+    border-radius: 3px;
+    outline: 3px solid #4f46e5;
+    outline-offset: 3px;
 }
 
 @media (max-width: 900px) {
@@ -788,7 +852,8 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .project-card {
+    .project-card,
+    .project-website-link {
         transition: none;
     }
 }

@@ -82,15 +82,18 @@ const projectCategories: {
     color: "indigo",
     projects: [
       {
-        name: "Online Storefront",
-        description: "A responsive storefront concept with product browsing and a streamlined shopping experience.",
+        name: "EpoxySlab",
+        description: "A furniture catalog website showcasing a variety of products, including tables, chairs, beds, wardrobes, and more.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#4f46e5", "store"),
         thumbnailAlt: "Illustrated storefront project thumbnail",
-        technologies: ["React", "TypeScript", "Stripe"],
+        technologies: ["Laravel", "Inertia.js", "React", "TypeScript", "MySQL"],
       },
       {
         name: "Appointment Booking",
         description: "A booking portal concept for browsing services and managing appointments online.",
+        href: "#",
         thumbnail: createThumbnail("#0f766e", "schedule"),
         thumbnailAlt: "Illustrated appointment booking project thumbnail",
         technologies: ["Laravel", "PHP", "MySQL"],
@@ -98,6 +101,8 @@ const projectCategories: {
       {
         name: "Business Dashboard",
         description: "A dashboard concept for bringing business activity and performance metrics together.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#c2410c", "dashboard"),
         thumbnailAlt: "Illustrated business dashboard project thumbnail",
         technologies: ["PHP", "JavaScript", "Chart.js"],
@@ -113,6 +118,8 @@ const projectCategories: {
       {
         name: "Developer Portfolio",
         description: "A personal portfolio concept for presenting projects, skills, and professional experience.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#7c3aed", "dashboard"),
         thumbnailAlt: "Illustrated developer portfolio project thumbnail",
         technologies: ["React", "TypeScript", "Tailwind CSS"],
@@ -120,6 +127,7 @@ const projectCategories: {
       {
         name: "Habit Tracker",
         description: "A simple habit tracking concept for building routines and reviewing progress over time.",
+        href: "#",
         thumbnail: createThumbnail("#0891b2", "dashboard"),
         thumbnailAlt: "Illustrated habit tracker project thumbnail",
         technologies: ["React", "Node.js", "PostgreSQL"],
@@ -127,6 +135,8 @@ const projectCategories: {
       {
         name: "Recipe Planner",
         description: "A meal planning concept for organizing recipes and preparing a weekly menu.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#ca8a04", "store"),
         thumbnailAlt: "Illustrated recipe planner project thumbnail",
         technologies: ["Next.js", "TypeScript", "Prisma"],
@@ -141,6 +151,8 @@ const projectCategories: {
       {
         name: "E-commerce Platform",
         description: "A commerce platform concept for managing product catalogs, customer orders, and fulfillment.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#2563eb", "store"),
         thumbnailAlt: "Illustrated e-commerce platform project thumbnail",
         technologies: ["PHP", "Laravel", "MySQL"],
@@ -148,6 +160,7 @@ const projectCategories: {
       {
         name: "Order Management System",
         description: "An operations workspace concept for tracking orders and coordinating business workflows.",
+        href: "#",
         thumbnail: createThumbnail("#be123c", "dashboard"),
         thumbnailAlt: "Illustrated order management system project thumbnail",
         technologies: ["Laravel", "JavaScript", "REST API"],
@@ -155,6 +168,8 @@ const projectCategories: {
       {
         name: "Integration Hub",
         description: "An integration service concept for connecting business tools and synchronizing information.",
+        href: "#",
+        websiteHref: "https://example.com",
         thumbnail: createThumbnail("#15803d", "schedule"),
         thumbnailAlt: "Illustrated integration hub project thumbnail",
         technologies: ["PHP", "REST APIs", "MySQL"],
