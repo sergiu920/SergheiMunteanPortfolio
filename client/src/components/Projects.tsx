@@ -1,4 +1,6 @@
 import Project, { type ProjectData } from "./Project";
+import epoxyslabThumbnail from "../assets/freelance-projects/epoxyslab.webp";
+import portfolioThumbnail from "../assets/personal-projects/portfolio.webp";
 
 type ThumbnailLayout = "store" | "schedule" | "dashboard";
 type CategoryColor = "indigo" | "teal" | "amber";
@@ -85,27 +87,10 @@ const projectCategories: {
         name: "EpoxySlab",
         description: "A furniture catalog website showcasing a variety of products, including tables, chairs, beds, wardrobes, and more.",
         href: "#",
-        websiteHref: "https://example.com",
-        thumbnail: createThumbnail("#4f46e5", "store"),
-        thumbnailAlt: "Illustrated storefront project thumbnail",
+        websiteHref: "https://dev.epoxyslab.md/",
+        thumbnail: epoxyslabThumbnail,
+        thumbnailAlt: "EpoxySlab furniture catalog website",
         technologies: ["Laravel", "Inertia.js", "React", "TypeScript", "MySQL"],
-      },
-      {
-        name: "Appointment Booking",
-        description: "A booking portal concept for browsing services and managing appointments online.",
-        href: "#",
-        thumbnail: createThumbnail("#0f766e", "schedule"),
-        thumbnailAlt: "Illustrated appointment booking project thumbnail",
-        technologies: ["Laravel", "PHP", "MySQL"],
-      },
-      {
-        name: "Business Dashboard",
-        description: "A dashboard concept for bringing business activity and performance metrics together.",
-        href: "#",
-        websiteHref: "https://example.com",
-        thumbnail: createThumbnail("#c2410c", "dashboard"),
-        thumbnailAlt: "Illustrated business dashboard project thumbnail",
-        technologies: ["PHP", "JavaScript", "Chart.js"],
       },
     ],
   },
@@ -116,31 +101,34 @@ const projectCategories: {
     color: "teal",
     projects: [
       {
-        name: "Developer Portfolio",
-        description: "A personal portfolio concept for presenting projects, skills, and professional experience.",
+        name: "Serghei Muntean | Portfolio",
+        description: "A personal portfolio website showcasing my projects, technical skills, and professional experience.",
         href: "#",
-        websiteHref: "https://example.com",
-        thumbnail: createThumbnail("#7c3aed", "dashboard"),
+        websiteHref: "https://sergheimuntean.github.io",
+        thumbnail: portfolioThumbnail,
         thumbnailAlt: "Illustrated developer portfolio project thumbnail",
         technologies: ["React", "TypeScript", "Tailwind CSS"],
       },
-      {
-        name: "Habit Tracker",
-        description: "A simple habit tracking concept for building routines and reviewing progress over time.",
-        href: "#",
-        thumbnail: createThumbnail("#0891b2", "dashboard"),
-        thumbnailAlt: "Illustrated habit tracker project thumbnail",
-        technologies: ["React", "Node.js", "PostgreSQL"],
-      },
-      {
-        name: "Recipe Planner",
-        description: "A meal planning concept for organizing recipes and preparing a weekly menu.",
-        href: "#",
-        websiteHref: "https://example.com",
-        thumbnail: createThumbnail("#ca8a04", "store"),
-        thumbnailAlt: "Illustrated recipe planner project thumbnail",
-        technologies: ["Next.js", "TypeScript", "Prisma"],
-      },
+      // Later:
+      // {
+      //   name: "LinguaReady",
+      //   description: "A platform for learning languages through interactive exercises, games, and AI-powered practice.",
+      //   href: "#",
+      //   websiteHref: "https://example.com",
+      //   thumbnail: createThumbnail("#ca8a04", "store"),
+      //   thumbnailAlt: "Illustrated recipe planner project thumbnail",
+      //   technologies: ["Next.js", "TypeScript", "Prisma"],
+      // },
+
+      // Status: Abandoned
+      // {
+      //   name: "JobReady",
+      //   description: "",
+      //   href: "#",
+      //   thumbnail: createThumbnail("#0891b2", "dashboard"),
+      //   thumbnailAlt: "Illustrated habit tracker project thumbnail",
+      //   technologies: ["React", "Node.js", "PostgreSQL"],
+      // },
     ],
   },
   {
