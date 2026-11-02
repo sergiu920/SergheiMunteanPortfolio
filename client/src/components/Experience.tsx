@@ -1,5 +1,6 @@
 const experience = [
   {
+    id: "experience-filip-net-srl",
     role: "Full-Stack Developer (PHP)",
     company: "Filip NET SRL",
     period: "Feb 2025 – Apr 2026",
@@ -10,6 +11,7 @@ const experience = [
     ],
   },
   {
+    id: "experience-subscribfy",
     role: "Full-Stack Developer (Laravel, Shopify)",
     company: "Subscribfy",
     period: "Apr 2024 – Dec 2024",
@@ -21,6 +23,7 @@ const experience = [
     ],
   },
   {
+    id: "experience-oceano-mercado-srl",
     role: "Full-Stack Developer (PHP, React)",
     company: "OCEANO MERCADO SRL",
     period: "Feb 2023 – Mar 2024",
@@ -32,6 +35,7 @@ const experience = [
     ],
   },
   {
+    id: "experience-ctif",
     role: "Full-Stack Developer (Laravel, Vue.js)",
     company: "Center of Information Technologies in Finance (CTIF)",
     period: "Oct 2018 – Feb 2023",
@@ -63,7 +67,7 @@ export default function Experience() {
 
         <div className="experience-list">
           {experience.map((entry) => (
-            <article className="experience-entry" key={entry.company}>
+            <article className="experience-entry" id={entry.id} key={entry.company}>
               <div className="experience-detail">
                 <div className="experience-entry-heading">
                   <div>
