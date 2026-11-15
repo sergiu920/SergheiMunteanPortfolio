@@ -1,9 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export type ProjectData = {
   name: string;
   description: string;
   href: string;
+  slug?: string;
   websiteHref?: string;
   company?: {
     name: string;
@@ -22,9 +24,9 @@ export default function Project({ project }: ProjectProps) {
   return (
     <div className="project-card-shell">
       <article className="project-card">
-        <a
+        <Link
           className="project-card-link"
-          href={project.href}
+          to={project.href}
           aria-label={`View details for ${project.name}`}
         />
         <div className="project-card-body">

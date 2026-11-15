@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import Logo from "../assets/logo.svg";
 
 const links = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Experience", href: "#experience" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#about" },
+    { label: "Skills", href: "/#skills" },
+    { label: "Projects", href: "/#projects" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur">
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-                <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+                <a href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
                     <img src={Logo} className="h-10 w-auto" alt="Serghei Muntean logo" />
                     Serghei Muntean <span className="font-normal">| Portfolio</span>
                 </a>
