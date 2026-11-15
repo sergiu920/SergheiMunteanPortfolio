@@ -842,7 +842,7 @@ html {
     gap: 6px;
     position: absolute;
     bottom: 18px;
-    left: 18px;
+    right: 18px;
     color: #4338ca;
     font-size: 14px;
     font-weight: 650;
@@ -852,7 +852,7 @@ html {
     display: inline-flex;
     position: absolute;
     z-index: 2;
-    right: 18px;
+    left: 18px;
     bottom: 18px;
     align-items: center;
     gap: 6px;

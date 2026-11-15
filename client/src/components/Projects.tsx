@@ -1,6 +1,10 @@
 import Project, { type ProjectData } from "./Project";
 import epoxyslabThumbnail from "../assets/freelance-projects/epoxyslab.webp";
 import portfolioThumbnail from "../assets/personal-projects/portfolio.webp";
+import subscribfyThumbnail from "../assets/professional-experience-projects/subscribfy.webp";
+import suprevaThumbnail from "../assets/professional-experience-projects/supreva.webp";
+import primaCasaThumbnail from "../assets/professional-experience-projects/crmprimacasa.webp";
+import sfsTaxPayerThumbnail from "../assets/professional-experience-projects/sfstaxpayer.webp";
 
 type ThumbnailLayout = "store" | "schedule" | "dashboard";
 type CategoryColor = "indigo" | "teal" | "amber";
@@ -150,21 +154,41 @@ const projectCategories: {
         name: "Subscribfy — Shopify App",
         description: "A Shopify application built with Laravel that enables merchants to manage customer discounts and store credits.",
         href: "#",
-        websiteHref: "https://subscribfy.io",
+        websiteHref: "https://apps.shopify.com/subscribfy",
         company: { name: "Subscribfy", experienceId: "experience-subscribfy" },
-        thumbnail: createThumbnail("#be123c", "dashboard"),
-        thumbnailAlt: "Illustrated dashboard thumbnail representing a Shopify application for managing customer discounts and store credits",
+        thumbnail: subscribfyThumbnail,
+        thumbnailAlt: "Illustrated thumbnail representing a Shopify application for managing customer discounts and store credits",
         technologies: ["Laravel", "JavaScript", "React"],
       },
       {
-        name: "Integration Hub",
-        description: "An integration service concept for connecting business tools and synchronizing information.",
+        name: "Supreva.com",
+        description: "A multi-vendor eCommerce marketplace",
         href: "#",
-        websiteHref: "https://example.com",
+        websiteHref: "https://supreva.com",
         company: { name: "OCEANO MERCADO SRL", experienceId: "experience-oceano-mercado-srl" },
-        thumbnail: createThumbnail("#15803d", "schedule"),
+        thumbnail: suprevaThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
         technologies: ["PHP", "REST APIs", "MySQL"],
+      },
+      {
+        name: "Prima Casa",
+        description: "A government platform for managing mortgage guarantee applications",
+        href: "#",
+        websiteHref: "https://crm.primacasa.gov.md/login",
+        company: { name: "CTIF", experienceId: "experience-ctif" },
+        thumbnail: primaCasaThumbnail,
+        thumbnailAlt: "Illustrated integration hub project thumbnail",
+        technologies: ["PHP", "Laravel", "MySQL"],
+      },
+      {
+        name: "Taxpayer Personal Account",
+        description: "An online government portal for taxpayers to access tax services and manage their tax-related information",
+        href: "#",
+        websiteHref: "https://sfs.md/ro/cabinetul-contribuabilului/login",
+        company: { name: "CTIF", experienceId: "experience-ctif" },
+        thumbnail: sfsTaxPayerThumbnail,
+        thumbnailAlt: "Illustrated integration hub project thumbnail",
+        technologies: ["PHP", "Laravel", "MySQL", "Vuejs2"],
       },
     ],
   },
