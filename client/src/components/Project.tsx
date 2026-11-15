@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ProjectContributionsDialog from "./ProjectContributionsDialog";
 
 export type ProjectData = {
   name: string;
   description: string;
-  href: string;
+  href?: string;
   slug?: string;
   websiteHref?: string;
   company?: {
@@ -24,17 +25,25 @@ export type ProjectData = {
 
 type ProjectProps = {
   project: ProjectData;
+  actionLabel?: string;
+  showContributionDialog?: boolean;
 };
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({
+  project,
+  actionLabel = "View Details",
+  showContributionDialog = false,
+}: ProjectProps) {
   return (
     <div className="project-card-shell">
       <article className="project-card">
-        <Link
-          className="project-card-link"
-          to={project.href}
-          aria-label={`View details for ${project.name}`}
-        />
+        {project.href && (
+          <Link
+            className="project-card-link"
+            to={project.href}
+            aria-label={`${actionLabel} for ${project.name}`}
+          />
+        )}
         <div className="project-card-body">
           <div className="project-preview">
             <img src={project.thumbnail} alt={project.thumbnailAlt} />
@@ -55,9 +64,15 @@ export default function Project({ project }: ProjectProps) {
                 <li key={technology}>{technology}</li>
               ))}
             </ul>
-            <span className="project-card-action">
-              View Details <ArrowUpRight size={16} aria-hidden="true" />
-            </span>
+            {project.href && (
+              showContributionDialog ? (
+                <ProjectContributionsDialog project={project} />
+              ) : (
+                <span className="project-card-action">
+                  {actionLabel} <ArrowUpRight size={16} aria-hidden="true" />
+                </span>
+              )
+            )}
           </div>
         </div>
         {project.websiteHref && (

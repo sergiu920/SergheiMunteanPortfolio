@@ -848,6 +848,20 @@ html {
     font-weight: 650;
 }
 
+.project-card-action--button {
+    z-index: 2;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.project-card-action--button:focus-visible {
+    border-radius: 3px;
+    outline: 3px solid #4f46e5;
+    outline-offset: 4px;
+}
+
 .project-website-link {
     display: inline-flex;
     position: absolute;

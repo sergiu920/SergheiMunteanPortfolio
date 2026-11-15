@@ -27,7 +27,18 @@ export default function Projects() {
               )}
               <div className="projects-grid">
                 {category.projects.map((project) => (
-                  <Project key={project.name} project={project} />
+                  <Project
+                    key={project.name}
+                    project={project}
+                    actionLabel={
+                      category.title === "Professional Experience Projects"
+                        ? "View My Contributions"
+                        : "View Details"
+                    }
+                    showContributionDialog={
+                      category.title === "Professional Experience Projects"
+                    }
+                  />
                 ))}
               </div>
             </section>

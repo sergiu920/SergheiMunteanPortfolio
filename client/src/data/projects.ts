@@ -137,8 +137,6 @@ export const projectCategories: {
       {
         name: "Serghei Muntean | Portfolio",
         description: "A personal portfolio website showcasing my projects, technical skills, and professional experience.",
-        href: "#",
-        websiteHref: "https://sergheimuntean.github.io",
         thumbnail: portfolioThumbnail,
         thumbnailAlt: "Illustrated developer portfolio project thumbnail",
         technologies: ["React", "TypeScript", "Tailwind CSS"],
@@ -179,6 +177,11 @@ export const projectCategories: {
         thumbnail: createThumbnail("#2563eb", "store"),
         thumbnailAlt: "Karpaten tourism ERP back-office dashboard interface",
         technologies: ["PHP", "MySQL", "JavaScript", "React"],
+        contributions: [
+          "Developed and maintained a large-scale ERP platform for the tourism industry, supporting booking management, customer operations, and integrations with external travel services.",
+          "Implemented Two-Factor Authentication (2FA) to improve account security.",
+          "Implemented integration with Moldova's e-Factura system for electronic invoice processing.",
+        ],
       },
       {
         name: "Subscribfy — Shopify App",
@@ -189,6 +192,12 @@ export const projectCategories: {
         thumbnail: subscribfyThumbnail,
         thumbnailAlt: "Illustrated thumbnail representing a Shopify application for managing customer discounts and store credits",
         technologies: ["Laravel", "JavaScript", "React"],
+        contributions: [
+          "Developed and maintained a Shopify application built with Laravel, enabling merchants to manage customer discounts and store credits.",
+          "Integrated a storefront widget into Shopify themes to display VIP membership benefits.",
+          "Implemented interactive charts and data tables using Polaris Viz.",
+          "Developed CSV export functionality using Laravel Excel.",
+        ],
       },
       {
         name: "Supreva.com",
@@ -199,6 +208,13 @@ export const projectCategories: {
         thumbnail: suprevaThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
         technologies: ["PHP", "REST APIs", "MySQL"],
+        contributions: [
+          "Contributed to the development and modernization of supreva.com, a multi-vendor eCommerce marketplace built with CS-Cart, PHP 7.4, and Smarty.",
+          "Participated in the gradual frontend migration from Smarty to React.",
+          "Delivered frontend enhancements, bug fixes, and UI improvements throughout the migration.",
+          "Developed a feature to merge uploaded PDF documents.",
+          "Implemented an approval and rejection workflow for buyer-vendor messages, enabling administrator moderation.",
+        ],
       },
       {
         name: "Prima Casa",
@@ -209,6 +225,12 @@ export const projectCategories: {
         thumbnail: primaCasaThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
         technologies: ["PHP", "Laravel", "MySQL"],
+        contributions: [
+          "Developed and maintained government web applications.",
+          "Implemented backend functionality using Laravel and frontend interfaces using Vue.js.",
+          "Integrated external services using SOAP APIs.",
+          "Implemented role-based access control and business workflows.",
+        ],
       },
       {
         name: "Taxpayer Personal Account",
@@ -219,6 +241,12 @@ export const projectCategories: {
         thumbnail: sfsTaxPayerThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
         technologies: ["PHP", "Laravel", "MySQL", "Vuejs2"],
+        contributions: [
+          "Developed and maintained government web applications.",
+          "Implemented backend functionality using Laravel and frontend interfaces using Vue.js.",
+          "Integrated external services using SOAP APIs.",
+          "Implemented role-based access control and business workflows.",
+        ],
       },
     ],
   },
