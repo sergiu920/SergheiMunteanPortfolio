@@ -1,5 +1,8 @@
 import type { ProjectData } from "../components/Project";
-import epoxyslabThumbnail from "../assets/freelance-projects/epoxyslab.webp";
+import epoxyslabThumbnail from "../assets/freelance-projects/epoxyslab/epoxyslab.webp";
+import epoxyslabAdminCategories from "../assets/freelance-projects/epoxyslab/admin-categories.png";
+import epoxyslabAdminProducts from "../assets/freelance-projects/epoxyslab/admin-products.png";
+import epoxyslabAdminCategory from "../assets/freelance-projects/epoxyslab/admin-category.png";
 import portfolioThumbnail from "../assets/personal-projects/portfolio.webp";
 import subscribfyThumbnail from "../assets/professional-experience-projects/subscribfy.webp";
 import suprevaThumbnail from "../assets/professional-experience-projects/supreva.webp";
@@ -89,13 +92,39 @@ export const projectCategories: {
     projects: [
       {
         name: "EpoxySlab",
-        description: "A furniture catalog website showcasing a variety of products, including tables, chairs, beds, wardrobes, and more.",
+        description: "An online furniture catalog built from scratch to showcase custom-made epoxy resin furniture, including tables, chairs, beds, and wardrobes. The platform includes a customer-facing catalog and an administration panel for managing products, categories, and orders.",
         href: "/project/epoxyslab",
         slug: "epoxyslab",
         websiteHref: "https://dev.epoxyslab.md/",
         thumbnail: epoxyslabThumbnail,
         thumbnailAlt: "EpoxySlab furniture catalog website",
         technologies: ["Laravel", "Inertia.js", "React", "TypeScript", "MySQL"],
+        contributions: [
+          "Built the application from scratch.",
+          "Developed the frontend and backend.",
+          "Implemented product and category management.",
+          "Developed product detail pages.",
+          "Developed cart page.",
+          "Implemented order management.",
+          "Created an administration panel for managing catalog content.",
+        ],
+        screenshots: [
+          {
+            src: epoxyslabAdminCategories,
+            alt: "EpoxySlab admin panel categories screen",
+            caption: "Category management",
+          },
+          {
+            src: epoxyslabAdminProducts,
+            alt: "EpoxySlab admin panel products screen",
+            caption: "Product management",
+          },
+          {
+            src: epoxyslabAdminCategory,
+            alt: "EpoxySlab admin panel category form",
+            caption: "Category details",
+          },
+        ],
       },
     ],
   },

@@ -86,7 +86,43 @@ export default function ProjectDetail() {
               ))}
             </ul>
           </section>
+
+          {project.contributions && (
+            <section className="md:col-span-2">
+              <h2 className="text-xl font-bold text-gray-950">My Contribution</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-gray-600">
+                {project.contributions.map((contribution) => (
+                  <li key={contribution}>{contribution}</li>
+                ))}
+              </ul>
+            </section>
+          )}
         </div>
+
+        {project.screenshots && project.screenshots.length > 0 && (
+          <section className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-950">Admin Panel Screenshots</h2>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              {project.screenshots.map((screenshot) => (
+                <figure
+                  className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+                  key={screenshot.src}
+                >
+                  <img
+                    className="block h-auto w-full"
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption className="border-t border-gray-200 px-4 py-3 text-sm font-medium text-gray-700">
+                    {screenshot.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
       </article>
     </main>
   );

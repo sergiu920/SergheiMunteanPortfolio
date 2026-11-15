@@ -14,6 +14,12 @@ export type ProjectData = {
   thumbnail: string;
   thumbnailAlt: string;
   technologies: string[];
+  contributions?: string[];
+  screenshots?: {
+    src: string;
+    alt: string;
+    caption: string;
+  }[];
 };
 
 type ProjectProps = {
