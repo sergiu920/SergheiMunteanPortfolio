@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
 const links = [
@@ -17,22 +18,22 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur">
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-                <a href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+                <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
                     <img src={Logo} className="h-10 w-auto" alt="Serghei Muntean logo" />
                     Serghei Muntean <span className="font-normal">| Portfolio</span>
-                </a>
+                </Link>
 
                 {/* Desktop menu */}
                 <nav className="hidden md:block">
                     <ul className="flex items-center gap-8">
                         {links.map((link) => (
                             <li key={link.href}>
-                                <a
-                                    href={link.href}
+                                <Link
+                                    to={link.href}
                                     className="text-sm font-medium text-gray-600 transition-colors hover:text-indigo-600"
                                 >
                                     {link.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -54,13 +55,13 @@ export default function Header() {
                     <ul className="flex flex-col px-4 py-2">
                         {links.map((link) => (
                             <li key={link.href}>
-                                <a
-                                    href={link.href}
+                                <Link
+                                    to={link.href}
                                     onClick={() => setOpen(false)}
                                     className="block py-3 text-sm font-medium text-gray-700 hover:text-indigo-600"
                                 >
                                     {link.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

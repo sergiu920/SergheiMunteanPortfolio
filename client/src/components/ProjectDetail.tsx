@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projectCategories } from "../data/projects";
 
 export default function ProjectDetail() {
@@ -16,9 +16,9 @@ export default function ProjectDetail() {
       <main className="mx-auto max-w-6xl px-4 py-20">
         <p className="text-sm font-semibold text-indigo-600">404</p>
         <h1 className="mt-3 text-3xl font-bold text-gray-950">Project not found</h1>
-        <a className="mt-6 inline-block text-indigo-600 underline" href="/#projects">
+        <Link className="mt-6 inline-block text-indigo-600 underline" to="/#projects">
           Back to projects
-        </a>
+        </Link>
       </main>
     );
   }
@@ -26,13 +26,13 @@ export default function ProjectDetail() {
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-slate-50">
       <article className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <a
+        <Link
           className="inline-flex items-center gap-2 text-sm font-medium text-indigo-700 hover:text-indigo-900"
-          href="/#projects"
+          to="/#projects"
         >
           <ArrowLeft size={16} aria-hidden="true" />
           Back to projects
-        </a>
+        </Link>
 
         <header className="mt-10">
           <p className="text-sm font-semibold text-indigo-600">
