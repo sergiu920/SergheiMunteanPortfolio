@@ -6,8 +6,9 @@ const experience = [
     period: "Feb 2025 – Apr 2026",
     location: "Remote",
     highlights: [
-      "Developed and maintained a large-scale tourism ERP for booking management and customer operations.",
-      "Integrated the platform with external travel services.",
+      "Developed and maintained a large-scale ERP platform for the tourism industry (karpaten.ro), supporting booking management, customer operations, and integrations with external travel services.",
+      "Implemented Two-Factor Authentication (2FA) to improve account security",
+      "Implemented integration with Moldova's e-Factura system for electronic invoice processing."
     ],
   },
   {
@@ -17,9 +18,10 @@ const experience = [
     period: "Apr 2024 – Dec 2024",
     location: "Timișoara",
     highlights: [
-      "Built and maintained a Laravel Shopify app for merchant discounts and store credits.",
-      "Integrated a Shopify theme widget for VIP membership benefits and built responsive customer and admin interfaces.",
-      "Implemented charts and data tables with Polaris Viz, plus CSV exports with Laravel Excel.",
+      "Developed and maintained a Shopify application built with Laravel, enabling merchants to manage customer discounts and store credits.",
+      "Integrated a storefront widget into Shopify themes to display VIP membership benefits.",
+      "Implemented interactive charts and data tables using Polaris Viz.",
+      "Developed CSV export functionality using Laravel Excel."
     ],
   },
   {
@@ -29,9 +31,11 @@ const experience = [
     period: "Feb 2023 – Mar 2024",
     location: "Remote",
     highlights: [
-      "Contributed to Supreva, a multi-vendor marketplace built with CS-Cart, PHP 7.4, and Smarty.",
-      "Supported the frontend migration from Smarty to React and Material UI while maintaining the PHP backend.",
-      "Built PDF document merging and buyer-vendor message approval and rejection workflows.",
+      "Contributed to the development and modernization of supreva.com, a multi-vendor eCommerce marketplace built with CS-Cart, PHP 7.4, and Smarty.",
+      "Participated in the gradual frontend migration from Smarty to React.",
+      "Delivered frontend enhancements, bug fixes, and UI improvements throughout the migration.",
+      "Developed a feature to merge uploaded PDF documents.",
+      "Implemented an approval and rejection workflow for buyer-vendor messages, enabling administrator moderation.",
     ],
   },
   {
@@ -41,9 +45,10 @@ const experience = [
     period: "Oct 2018 – Feb 2023",
     location: "Chișinău",
     highlights: [
-      "Contributed to government and enterprise applications supporting Moldova’s Ministry of Finance.",
-      "Integrated a SOAP service and built company and accountant management for the Personal Cabinet system.",
-      "Implemented role-based access, application workflows, and status tracking for the Prima Casa platform.",
+      "Developed and maintained government web applications.",
+      "Implemented backend functionality using Laravel and frontend interfaces using Vue.js.",
+      "Integrated external services using SOAP APIs.",
+      "Implemented role-based access control and business workflows.",
     ],
   },
 ];
