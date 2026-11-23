@@ -56,7 +56,7 @@ export default function App() {
             <main className="mx-auto max-w-6xl px-4 py-20">
               <p className="text-sm font-semibold text-indigo-600">404</p>
               <h1 className="mt-3 text-3xl font-bold text-gray-950">Page not found</h1>
-              <a className="mt-6 inline-block text-indigo-600 underline" href="/">
+              <a className="mt-6 inline-block text-indigo-600 underline" href={import.meta.env.BASE_URL}>
                 Back to portfolio
               </a>
             </main>
