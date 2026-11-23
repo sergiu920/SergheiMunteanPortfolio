@@ -430,15 +430,27 @@ html {
 
 .experience-detail h3 {
     color: #111827;
-    font-size: 19px;
-    font-weight: 650;
+    font-size: 24px;
+    font-weight: 750;
     line-height: 1.4;
+}
+
+.experience-entry-heading h3 {
+    color: #111827;
+    font-size: 24px;
+    font-weight: 750;
+    line-height: 1.35;
 }
 
 .experience-company {
     margin-top: 5px;
     color: #64716e;
     font-size: 14px;
+}
+
+.experience-company span {
+    color: #34444a;
+    font-weight: 700;
 }
 
 .experience-detail ul {

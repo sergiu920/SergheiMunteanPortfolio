@@ -65,7 +65,9 @@ export default function Experience() {
                 <div className="experience-entry-heading">
                   <div>
                     <h3>{entry.company}</h3>
-                    <p className="experience-company">{entry.role}</p>
+                    <p className="experience-company">
+                      <span>Position:</span> {entry.role}
+                    </p>
                   </div>
                   <div className="experience-meta">
                     <p className="experience-period">{entry.period}</p>
