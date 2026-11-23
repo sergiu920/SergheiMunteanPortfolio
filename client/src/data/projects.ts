@@ -191,7 +191,7 @@ export const projectCategories: {
         company: { name: "Subscribfy", experienceId: "experience-subscribfy" },
         thumbnail: subscribfyThumbnail,
         thumbnailAlt: "Illustrated thumbnail representing a Shopify application for managing customer discounts and store credits",
-        technologies: ["Laravel", "JavaScript", "React"],
+        technologies: ["Laravel", "MySQL", "JavaScript", "React"],
         contributions: [
           "Developed and maintained a Shopify application built with Laravel, enabling merchants to manage customer discounts and store credits.",
           "Integrated a storefront widget into Shopify themes to display VIP membership benefits.",
@@ -201,13 +201,13 @@ export const projectCategories: {
       },
       {
         name: "Supreva.com",
-        description: "A multi-vendor eCommerce marketplace",
+        description: "A B2B multi-vendor eCommerce marketplace connecting suppliers, manufacturers, distributors, and business buyers through an online wholesale platform.",
         href: "#",
         websiteHref: "https://supreva.com",
         company: { name: "OCEANO MERCADO SRL", experienceId: "experience-oceano-mercado-srl" },
         thumbnail: suprevaThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
-        technologies: ["PHP", "REST APIs", "MySQL"],
+        technologies: ["PHP", "MySQL", "JavaScript"],
         contributions: [
           "Contributed to the development and modernization of supreva.com, a multi-vendor eCommerce marketplace built with CS-Cart, PHP 7.4, and Smarty.",
           "Participated in the gradual frontend migration from Smarty to React.",
@@ -218,13 +218,13 @@ export const projectCategories: {
       },
       {
         name: "Prima Casa",
-        description: "A government platform for managing mortgage guarantee applications",
+        description: "A government platform for managing mortgage guarantee applications, streamlining application processing, eligibility verification, and approval workflows under the Prima Casă program.",
         href: "#",
         websiteHref: "https://crm.primacasa.gov.md/login",
         company: { name: "CTIF", experienceId: "experience-ctif" },
         thumbnail: primaCasaThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
-        technologies: ["PHP", "Laravel", "MySQL"],
+        technologies: ["Laravel", "MySQL", "JavaScript"],
         contributions: [
           "Developed and maintained government web applications.",
           "Implemented backend functionality using Laravel and frontend interfaces using Vue.js.",
@@ -240,7 +240,7 @@ export const projectCategories: {
         company: { name: "CTIF", experienceId: "experience-ctif" },
         thumbnail: sfsTaxPayerThumbnail,
         thumbnailAlt: "Illustrated integration hub project thumbnail",
-        technologies: ["PHP", "Laravel", "MySQL", "Vuejs2"],
+        technologies: ["Laravel", "MySQL", "Vue.js 2"],
         contributions: [
           "Developed and maintained government web applications.",
           "Implemented backend functionality using Laravel and frontend interfaces using Vue.js.",

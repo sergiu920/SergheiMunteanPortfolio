@@ -1,28 +1,35 @@
-import { useId, useRef } from "react";
+import { useId, useRef, type RefObject } from "react";
 import { ArrowUpRight, X } from "lucide-react";
 import type { ProjectData } from "./Project";
 
 type ProjectContributionsDialogProps = {
   project: ProjectData;
+  dialogRef?: RefObject<HTMLDialogElement | null>;
+  showButton?: boolean;
 };
 
 export default function ProjectContributionsDialog({
   project,
+  dialogRef: externalDialogRef,
+  showButton = true,
 }: ProjectContributionsDialogProps) {
-  const dialogRef = useRef<HTMLDialogElement>(null);
+  const internalDialogRef = useRef<HTMLDialogElement>(null);
+  const dialogRef = externalDialogRef ?? internalDialogRef;
   const titleId = useId();
 
   return (
     <>
-      <button
-        className="project-card-action project-card-action--button"
-        type="button"
-        aria-haspopup="dialog"
-        aria-label={`View my contributions to ${project.name}`}
-        onClick={() => dialogRef.current?.showModal()}
-      >
-        View My Contributions <ArrowUpRight size={16} aria-hidden="true" />
-      </button>
+      {showButton && (
+        <button
+          className="project-card-action project-card-action--button"
+          type="button"
+          aria-haspopup="dialog"
+          aria-label={`View my contributions to ${project.name}`}
+          onClick={() => dialogRef.current?.showModal()}
+        >
+          View My Contributions <ArrowUpRight size={16} aria-hidden="true" />
+        </button>
+      )}
 
       <dialog
         ref={dialogRef}

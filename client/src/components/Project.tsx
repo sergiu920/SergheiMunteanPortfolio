@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 import ProjectContributionsDialog from "./ProjectContributionsDialog";
 
 export type ProjectData = {
@@ -27,23 +28,27 @@ type ProjectProps = {
   project: ProjectData;
   actionLabel?: string;
   showContributionDialog?: boolean;
+  hideCompany?: boolean;
 };
 
 export default function Project({
   project,
   actionLabel = "View Details",
   showContributionDialog = false,
+  hideCompany = false,
 }: ProjectProps) {
+  const contributionsDialogRef = useRef<HTMLDialogElement>(null);
+
   return (
     <div className="project-card-shell">
       <article className="project-card">
-        {project.href && (
+        {!showContributionDialog && project.href ? (
           <Link
             className="project-card-link"
             to={project.href}
             aria-label={`${actionLabel} for ${project.name}`}
           />
-        )}
+        ) : null}
         <div className="project-card-body">
           <div className="project-preview">
             <img src={project.thumbnail} alt={project.thumbnailAlt} />
@@ -51,7 +56,7 @@ export default function Project({
           <div className="project-card-content">
             <h3>{project.name}</h3>
             <p className="project-description">{project.description}</p>
-            {project.company && (
+            {project.company && !hideCompany && (
               <p className="project-company">
                 Company:{" "}
                 <a href={`#${project.company.experienceId}`}>
@@ -66,7 +71,11 @@ export default function Project({
             </ul>
             {project.href && (
               showContributionDialog ? (
-                <ProjectContributionsDialog project={project} />
+                <ProjectContributionsDialog
+                  project={project}
+                  dialogRef={contributionsDialogRef}
+                  showButton
+                />
               ) : (
                 <span className="project-card-action">
                   {actionLabel} <ArrowUpRight size={16} aria-hidden="true" />

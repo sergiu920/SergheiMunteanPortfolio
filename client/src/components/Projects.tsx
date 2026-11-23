@@ -16,7 +16,9 @@ export default function Projects() {
         </div>
 
         <div className="projects-categories">
-          {projectCategories.map((category) => (
+          {projectCategories
+            .filter((category) => category.title !== "Professional Experience Projects")
+            .map((category) => (
             <section className={`projects-category projects-category--${category.color}`} key={category.title}>
               <div className="projects-category-header">
                 <h3 className="projects-category-heading">{category.title}</h3>
@@ -33,7 +35,7 @@ export default function Projects() {
                     actionLabel={
                       category.title === "Professional Experience Projects"
                         ? "View My Contributions"
-                        : "View Details"
+                        : "View Project Details"
                     }
                     showContributionDialog={
                       category.title === "Professional Experience Projects"
