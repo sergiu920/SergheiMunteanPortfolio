@@ -10,7 +10,7 @@ export default function Projects() {
             <p className="text-sm font-semibold text-indigo-600">Projects I've Worked On</p>
             <h2 className="mt-3 text-3xl font-bold text-gray-950 md:text-4xl">Projects</h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-gray-600">
-              Explore projects across freelance work, personal experiments, and professional experience.
+              Explore projects developed through freelance work and personal initiatives.
             </p>
           </div>
         </div>

@@ -6,8 +6,8 @@ import Logo from "../assets/logo.svg";
 const links = [
     { label: "About", href: "/#about" },
     { label: "Skills", href: "/#skills" },
-    { label: "Projects", href: "/#projects" },
     { label: "Professional Experience", href: "/#experience" },
+    { label: "Projects", href: "/#projects" },
     { label: "Contact", href: "/#contact" },
 ];
 
